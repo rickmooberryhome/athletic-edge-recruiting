@@ -3,186 +3,294 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Play. Get Noticed. Own Your Future.</title>
-  <style>
-    /* ==== Basic Reset ==== */
-    *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height:1.6; color:#f0f0f0; background:#111; }
-    a {color:inherit; text-decoration:none;}
-    img {max-width:100%; height:auto; display:block;}
-    .container {width:90%; max-width:1200px; margin:auto; padding:2rem 0;}
-    .text-center {text-align:center;}
-    .btn {display:inline-block; background:#ff3c78; color:#fff; padding:.75rem 1.5rem; border-radius:.4rem; font-weight:600; cursor:pointer; transition:background .2s; border:none;}
-    .btn:hover {background:#e7356f;}
-    .hero {position:relative; height:80vh; display:flex; align-items:center; justify-content:center; color:#fff; overflow:hidden;}
-    .hero::before {content:""; position:absolute; inset:0; background:linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.2)); z-index:1;}
-    .hero-img {position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:brightness(0.5);}
-    .hero-content {position:relative; z-index:2; max-width:800px; padding:1rem;}
-    .hero h1 {font-size:2.8rem; margin-bottom:.5rem;}
-    .hero p {font-size:1.2rem; margin-bottom:1.5rem;}
-    .features {display:flex; flex-wrap:wrap; gap:1.5rem; margin:2rem 0;}
-    .feature {flex:1 1 260px; background:#222; border-radius:.5rem; padding:1.5rem; text-align:center;}
-    .feature h3 {color:#ff3c78; margin-bottom:.5rem;}
-    .steps {margin:3rem 0;}
-    .step {display:flex; align-items:flex-start; gap:1rem; margin-bottom:1.5rem;}
-    .step-number {background:#ff3c78; color:#fff; width:2rem; height:2rem; line-height:2rem; text-align:center; border-radius:50%; font-weight:700;}
-    .form-section {background:#222; padding:2rem; border-radius:.5rem; margin-top:2rem;}
-    .tabs {display:flex; gap:.5rem; margin-bottom:1rem;}
-    .tab {flex:1; padding:.75rem; text-align:center; background:#333; color:#ccc; cursor:pointer; border-radius:.4rem;}
-    .tab.active {background:#ff3c78; color:#fff;}
-    .form {display:none;}
-    .form.active {display:block;}
-    .form-group {margin-bottom:1rem;}
-    label {display:block; margin-bottom:.4rem; font-weight:600;}
-    input, textarea {width:100%; padding:.6rem; border:none; border-radius:.3rem;}
-    .privacy {font-size:.8rem; margin-top:.5rem; color:#aaa;}
-    .faq {margin:2rem 0;}
-    .faq-item {margin-bottom:1rem;}
-    .faq-question {font-weight:600; cursor:pointer; color:#ff3c78;}
-    .faq-answer {display:none; margin-top:.4rem;}
-    .footer {font-size:.8rem; text-align:center; color:#777; padding:2rem 0; border-top:1px solid #333;}
-    @media (max-width:768px){ .hero h1{font-size:2rem;} .features{flex-direction:column;} .step{flex-direction:column;}}
-  </style>
+  <title>Get Noticed. Get Recruited. | Athletic Edge Recruiting</title>
+  <meta name="description" content="Your personal recruiting coordinator. We help high school athletes get noticed by college coaches and find the right fit." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Athletic<span>Edge</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#signup" class="nav-cta">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <section class="hero">
-    <img class="hero-img" src="https://source.unsplash.com/1600x900/?football,stadium" alt="Football stadium" />
+    <img class="hero-img" src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=1600&q=80" alt="Football stadium" />
     <div class="hero-content">
       <h1>Play. Get Noticed. Own Your Future.</h1>
-      <p>Free 360° Recruiting Review + a curated list of schools each month. No gimmicks, just a clear roadmap.</p>
-      <button class="btn" id="ctaBtn">Join the Waitlist</button>
+      <p>Your personal recruiting coordinator — doing the heavy lifting so you can focus on what matters: playing the game.</p>
+      <a href="#signup" class="btn">Start Your Free Review</a>
     </div>
   </section>
 
   <div class="container">
-    <section class="features">
-      <div class="feature">
-        <h3>360° Review</h3>
-        <p>We evaluate academics, stats, highlight tape and preferences.</p>
-      </div>
-      <div class="feature">
-        <h3>Monthly School List</h3>
-        <p>5‑10 hand‑picked schools each month with coach contacts.</p>
-      </div>
-      <div class="feature">
-        <h3>Ready‑to‑Send Outreach</h3>
-        <p>Personalized email/DM templates you can send in seconds.</p>
-      </div>
-      <div class="feature">
-        <h3>Bi‑weekly Check‑ins</h3>
-        <p>We track responses and keep you on track.</p>
+    <section class="section text-center">
+      <h2>What We Do</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>360° Recruiting Review</h3>
+          <p>We evaluate your academics, stats, highlight tape, and college preferences — then build your personalized roadmap.</p>
+        </div>
+        <div class="feature">
+          <h3>Monthly School Targets</h3>
+          <p>Get 5-10 hand-picked schools each month with coach contacts, recruiting timelines, and fit analysis.</p>
+        </div>
+        <div class="feature">
+          <h3>Ready-to-Send Outreach</h3>
+          <p>Personalized email and DM templates tailored to each school — you send, we help you follow up.</p>
+        </div>
+        <div class="feature">
+          <h3>Bi-weekly Check-ins</h3>
+          <p>We track responses, review coach feedback, and adjust your strategy so you never miss an opportunity.</p>
+        </div>
       </div>
     </section>
 
-    <section class="steps">
+    <section class="section">
       <h2 class="text-center">How It Works</h2>
-      <div class="step">
-        <div class="step-number">1</div>
-        <div>
-          <strong>Free 360° Review</strong><br/>Fill a quick form. We analyze your academics, stats, highlight reel and dream schools.
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <strong>Free 360° Review</strong>
+            <p>Fill out our quick form with your academic info, stats, highlight video link, and dream schools. We'll analyze everything and send back a personalized recruiting roadmap within 24 hours.</p>
+          </div>
         </div>
-      </div>
-      <div class="step">
-        <div class="step-number">2</div>
-        <div>
-          <strong>Monthly Targets</strong><br/>Receive a list of 5‑10 schools with coach names, emails and a ready‑to‑send outreach draft.
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <strong>Monthly Target List</strong>
+            <p>Each month, receive a curated list of 5-10 schools that fit your profile. Includes coach names, emails, recruiting calendars, and a ready-to-send outreach draft for each one.</p>
+          </div>
         </div>
-      </div>
-      <div class="step">
-        <div class="step-number">3</div>
-        <div>
-          <strong>Follow‑up & Refine</strong><br/>We check in bi‑weekly, review any replies and fine‑tune your next outreach.
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <strong>Follow Up & Refine</strong>
+            <p>We check in every two weeks to review any responses, discuss next steps, and fine-tune your approach based on what's working.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="form-section" id="formSection">
-      <div class="tabs">
-        <div class="tab active" data-target="athleteForm">Athlete</div>
-        <div class="tab" data-target="parentForm">Parent/Guardian</div>
+    <section class="section text-center">
+      <h2>Choose Your Plan</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Foundation</h3>
+          <div class="price">$99<span>/month</span></div>
+          <ul>
+            <li>360° Recruiting Review</li>
+            <li>5 school targets/month</li>
+            <li>Email outreach templates</li>
+            <li>Bi-weekly check-ins</li>
+          </ul>
+          <a href="#signup" class="btn btn-outline">Get Started</a>
+        </div>
+        <div class="pricing-card featured">
+          <h3>Elite</h3>
+          <div class="price">$199<span>/month</span></div>
+          <ul>
+            <li>Everything in Foundation</li>
+            <li>10 school targets/month</li>
+            <li>Coach research & direct contacts</li>
+            <li>Weekly strategy calls</li>
+            <li>Highlight tape review</li>
+          </ul>
+          <a href="#signup" class="btn">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Signature</h3>
+          <div class="price">$299<span>/month</span></div>
+          <ul>
+            <li>Everything in Elite</li>
+            <li>Unlimited school targets</li>
+            <li>We handle coach outreach</li>
+            <li>Official visit guidance</li>
+            <li>Scholarship negotiation help</li>
+          </ul>
+          <a href="#signup" class="btn btn-outline">Get Started</a>
+        </div>
       </div>
-
-      <!-- Athlete Form -->
-      <form class="form active" id="athleteForm" action="#" method="POST">
-        <h3 class="text-center">Athlete Interest</h3>
-        <div class="form-group"><label for="athName">Name</label><input type="text" id="athName" name="name" required></div>
-        <div class="form-group"><label for="athAge">Age</label><input type="number" id="athAge" name="age" min="13" max="22" required></div>
-        <div class="form-group"><label for="athLocation">Location (City, State)</label><input type="text" id="athLocation" name="location" required></div>
-        <div class="form-group"><label for="athEmail">Email</label><input type="email" id="athEmail" name="email" required></div>
-        <div class="form-group"><label for="athSport">Sport</label><input type="text" id="athSport" name="sport" value="Football" readonly></div>
-        <button type="submit" class="btn">Submit</button>
-        <p class="privacy">We’ll respond within 24 hours. No spam. Your info stays private.</p>
-      </form>
-
-      <!-- Parent Form -->
-      <form class="form" id="parentForm" action="#" method="POST">
-        <h3 class="text-center">Parent/Guardian Interest</h3>
-        <div class="form-group"><label for="parName">Your Name</label><input type="text" id="parName" name="name" required></div>
-        <div class="form-group"><label for="parEmail">Email</label><input type="email" id="parEmail" name="email" required></div>
-        <div class="form-group"><label for="parLocation">Location (City, State)</label><input type="text" id="parLocation" name="location" required></div>
-        <div class="form-group"><label for="parChildName">Child’s Name</label><input type="text" id="parChildName" name="child_name" required></div>
-        <div class="form-group"><label for="parChildAge">Child’s Age</label><input type="number" id="parChildAge" name="child_age" min="13" max="22" required></div>
-        <button type="submit" class="btn">Submit</button>
-        <p class="privacy">We’ll respond within 24 hours. No spam. Your info stays private.</p>
-      </form>
     </section>
 
-    <section class="faq">
+    <section class="section" id="signup">
+      <h2 class="text-center">Let's Get Started</h2>
+      <div class="form-section">
+        <div class="tabs">
+          <div class="tab active" data-target="athleteForm">Athlete</div>
+          <div class="tab" data-target="parentForm">Parent/Guardian</div>
+        </div>
+
+        <form class="form active" id="athleteForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="athName">Your Name</label>
+              <input type="text" id="athName" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="athGradYear">Grad Year</label>
+              <select id="athGradYear" name="grad_year">
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="athLocation">City, State</label>
+              <input type="text" id="athLocation" name="location" required>
+            </div>
+            <div class="form-group">
+              <label for="athEmail">Email</label>
+              <input type="email" id="athEmail" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="athPosition">Position</label>
+              <input type="text" id="athPosition" name="position" placeholder="e.g., Quarterback, Safety">
+            </div>
+            <div class="form-group">
+              <label for="athGPA">GPA (optional)</label>
+              <input type="text" id="athGPA" name="gpa" placeholder="e.g., 3.5">
+            </div>
+            <div class="form-group full">
+              <label for="athHighlights">Highlight Video URL</label>
+              <input type="url" id="athHighlights" name="highlights" placeholder="YouTube, Hudl, or Vimeo link">
+            </div>
+          </div>
+          <button type="submit" class="btn">Submit Application</button>
+          <p class="privacy">We respond within 24 hours. No spam. Your info stays private.</p>
+        </form>
+
+        <form class="form" id="parentForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="parName">Your Name</label>
+              <input type="text" id="parName" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="parEmail">Email</label>
+              <input type="email" id="parEmail" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="parLocation">City, State</label>
+              <input type="text" id="parLocation" name="location" required>
+            </div>
+            <div class="form-group">
+              <label for="parPhone">Phone</label>
+              <input type="tel" id="parPhone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="parChildName">Child's Name</label>
+              <input type="text" id="parChildName" name="child_name" required>
+            </div>
+            <div class="form-group">
+              <label for="parChildGradYear">Child's Grad Year</label>
+              <select id="parChildGradYear" name="child_grad_year">
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="parNotes">Anything We Should Know?</label>
+              <textarea id="parNotes" name="notes" rows="3" placeholder="Positions, stats, highlight links, specific interests..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn">Submit Application</button>
+          <p class="privacy">We respond within 24 hours. No spam. Your info stays private.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
       <h2 class="text-center">Frequently Asked Questions</h2>
       <div class="faq-item">
         <div class="faq-question">How does the 360° Review work?</div>
-        <div class="faq-answer">You fill in a short form with your academic info, stats and highlight‑tape link. We compile a personalized roadmap and send it back within 24 hours.</div>
+        <div class="faq-answer">You fill out our form with your academic info, stats, highlight video link, and college preferences. Within 24 hours, we'll send you a personalized recruiting roadmap tailored to your profile.</div>
       </div>
       <div class="faq-item">
         <div class="faq-question">Will you contact coaches for us?</div>
-        <div class="faq-answer">No. We give you the coach’s contact info and a ready‑to‑send email template so you can reach out yourself.</div>
+        <div class="faq-answer">That depends on your plan. Foundation and Elite give you the tools to reach out yourself. Signature includes full coach outreach where we handle the communication for you.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">What if I don’t have a highlight reel yet?</div>
-        <div class="faq-answer">We’ll give you a quick guide on creating a 30‑second highlight video that coaches love.</div>
+        <div class="faq-question">What if I don't have a highlight video yet?</div>
+        <div class="faq-answer">No problem. We'll give you a simple guide on creating a 30-60 second highlight reel that coaches actually want to see. Plus, Elite and Signature plans include our team reviewing and improving your tape.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Can I cancel anytime?</div>
+        <div class="faq-answer">Absolutely. No long-term contracts. Cancel anytime with 7 days notice for the next billing cycle.</div>
       </div>
     </section>
   </div>
 
-  <footer class="footer">
-    <p>© 2026 Recruiting Partner. All rights reserved.</p>
-    <p>Your privacy is important – we never share your data.</p>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>AthleticEdge</h4>
+          <p style="color: #777; font-size: 0.9rem;">Your personal recruiting coordinator. Helping athletes get noticed since 2026.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="#signup">Get Started</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p style="color: #777; font-size: 0.9rem;">hello@athleticedge.recruiting</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Athletic Edge Recruiting. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 
   <script>
-    // Simple tab switching
+    // Tab switching
     const tabs = document.querySelectorAll('.tab');
     const forms = document.querySelectorAll('.form');
     tabs.forEach(tab => {
       tab.addEventListener('click', () => {
-        tabs.forEach(t=>t.classList.remove('active'));
+        tabs.forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
         const target = tab.dataset.target;
-        forms.forEach(f=>{
-          f.classList.toggle('active', f.id===target);
+        forms.forEach(f => {
+          f.classList.toggle('active', f.id === target);
         });
       });
     });
+
     // FAQ toggles
-    document.querySelectorAll('.faq-question').forEach(q=>{
-      q.addEventListener('click',()=>{
-        const ans = q.nextElementSibling;
-        ans.style.display = ans.style.display==='none' || ans.style.display==='' ? 'block' : 'none';
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        q.classList.toggle('active');
+        q.nextElementSibling.classList.toggle('show');
       });
     });
-    // CTA scroll to form
-    document.getElementById('ctaBtn').addEventListener('click',()=>{
-      document.getElementById('formSection').scrollIntoView({behavior:'smooth'});
+
+    // Form handling (demo - replace with your endpoint)
+    document.querySelectorAll('form').forEach(form => {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thanks! We\'ll be in touch within 24 hours.');
+        form.reset();
+      });
     });
-    // A/B variant handling (via ?variant=1 or 2)
-    const urlParams = new URLSearchParams(window.location.search);
-    const variant = urlParams.get('variant');
-    if(variant==='2'){
-      // Change hero image and accent color for variant B
-      document.querySelector('.hero-img').src='https://source.unsplash.com/1600x900/?football,player';
-      document.querySelectorAll('.feature h3, .step-number, .tab.active').forEach(el=>el.style.color='#1e90ff');
-      document.querySelectorAll('.btn').forEach(b=>b.style.background='#1e90ff');
-    }
   </script>
 </body>
 </html>
